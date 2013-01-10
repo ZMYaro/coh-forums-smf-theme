@@ -1138,12 +1138,13 @@ span.lowerframe span
 
 /* Styles for the standard dropdown menus.
 ------------------------------------------------------- */
-#main_menu
+#main_menu, #admin_menu, #adm_submenus
 {
 	padding: 0;
 	float: left;
 	margin: 0;
-	width: 98%;
+	/*width: 98%;*/
+	width: 100%;
 	
 	font-size: 110%;
 	
@@ -1397,7 +1398,7 @@ ul#navigation li
 
 #adm_submenus
 {
-	padding-left: 2em;
+	/*padding-left: 2em;*/
 	overflow: hidden;
 }
 
