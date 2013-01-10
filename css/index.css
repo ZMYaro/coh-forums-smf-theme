@@ -159,7 +159,7 @@ hr, .hrcolor
 /* By default set the color on these tags as #000. */
 h1, h2, h3, h4, h5, h6
 {
-	color: #000;
+	/*color: #000;*/
 	font-size: 1em;
 	margin: 0;
 	padding: 0;
@@ -432,11 +432,11 @@ code.bbc_code
 
 .titlebg, .titlebg2, tr.titlebg th, tr.titlebg td, tr.titlebg2 td
 {
-	color: #222;
-	font-family: arial, helvetica, sans-serif;
+	/*color: #222;
+	font-family: arial, helvetica, sans-serif;*/
 	font-size: 1.1em;
 	font-weight: bold;
-	background: #e3e9ef url(../images/theme/main_block.png) no-repeat -10px -380px;
+	/*background: #e3e9ef url(../images/theme/main_block.png) no-repeat -10px -380px;*/
 }
 .catbg, .catbg2, tr.catbg td, tr.catbg2 td, tr.catbg th, tr.catbg2 th
 {
@@ -445,7 +445,7 @@ code.bbc_code
 	font-size: 1.1em;
 	font-weight: bold;
 	/*background: #a7b9cd url(../images/theme/main_block.png) no-repeat -10px -280px;*/
-	background-color: #191919;
+	background-color: #424549;
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#424549', endColorstr='#1D1E1E',GradientType=0);
 	background: -webkit-gradient(linear, left top, left bottom, from(#424549), to(#1D1E1E));
 	background: -webkit-linear-gradient(#424549, #1D1E1E);
@@ -787,10 +787,10 @@ h3.catbg2 a:hover
 	color: #fff;
 	text-decoration: none;
 }
-h3.titlebg a, h3.titlebg, h4.titlebg, h4.titlebg a
+/*h3.titlebg a, h3.titlebg, h4.titlebg, h4.titlebg a
 {
 	color: #222;
-}
+}*/
 h3.titlebg a:hover, h4.titlebg a:hover
 {
 	color: #53616f;
@@ -815,7 +815,7 @@ h4.catbg, h4.catbg2 , h3.catbg , h3.catbg2 , .table_list tbody.header td.catbg
 }
 h4.titlebg, h3.titlebg
 {
-	background: url(../images/theme/main_block.png) no-repeat 100% -200px;
+	/*background: url(../images/theme/main_block.png) no-repeat 100% -200px;*/
 	padding-right: 9px;
 }
 h4.titlebg img.icon
@@ -853,16 +853,26 @@ div.title_bar
 
 div.roundframe div.cat_bar
 {
-	background: #99abbf url(../images/theme/main_block.png) no-repeat 0 -240px;
+	/*background: #99abbf url(../images/theme/main_block.png) no-repeat 0 -240px;*/
 	margin-bottom: 0;
+	border-bottom: 1px solid #547280;
 }
-div.roundframe div.cat_bar h3.catbg
+/*div.roundframe div.cat_bar h3.catbg
 {
 	background: url(../images/theme/main_block.png) no-repeat 100% -240px;
-}
+}*/
 div.title_barIC
 {
-	background: #dadfe6 url(../images/theme/main_block.png) no-repeat 0 -120px;
+	/*background: #dadfe6 url(../images/theme/main_block.png) no-repeat 0 -120px;*/
+	background-color: #424549;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#424549', endColorstr='#1D1E1E',GradientType=0);
+	background: -webkit-gradient(linear, left top, left bottom, from(#424549), to(#1D1E1E));
+	background: -webkit-linear-gradient(#424549, #1D1E1E);
+	background:    -moz-linear-gradient(#424549, #1D1E1E);
+	background:     -ms-linear-gradient(#424549, #1D1E1E);
+	background:      -o-linear-gradient(#424549, #1D1E1E);
+	background:         linear-gradient(#424549, #1D1E1E);
+	
 	padding-left: 9px;
 	height: 31px;
 	overflow: hidden;
@@ -870,7 +880,7 @@ div.title_barIC
 }
 div.title_barIC h4.titlebg
 {
-	background: url(../images/theme/main_block.png) no-repeat 100% -120px;
+	/*background: url(../images/theme/main_block.png) no-repeat 100% -120px;*/
 }
 #upshrinkHeaderIC p.pminfo
 {
@@ -1053,10 +1063,20 @@ table.table_grid thead tr.catbg th
 ----------------------------------------------------------- */
 .roundframe
 {
-	padding: 0 10px;
-	background: #f5f5f5;
-	border-left: 1px solid #c5c5c5;
-	border-right: 1px solid #c5c5c5;
+	padding: 0;
+	/*background: #f5f5f5;*/
+	background-color: #364D5D;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#364D5D', endColorstr='#1F3A4D',GradientType=0);
+	background: -webkit-gradient(linear, left top, left bottom, from(#364D5D), to(#1F3A4D));
+	background: -webkit-linear-gradient(#364D5D, #1F3A4D);
+	background:    -moz-linear-gradient(#364D5D, #1F3A4D);
+	background:     -ms-linear-gradient(#364D5D, #1F3A4D);
+	background:      -o-linear-gradient(#364D5D, #1F3A4D);
+	background:         linear-gradient(#364D5D, #1F3A4D);
+	
+	/*border-left: 1px solid #c5c5c5;
+	border-right: 1px solid #c5c5c5;*/
+	border: 1px solid #547280;
 }
 .roundframe dl, .roundframe dt, .roundframe p
 {
@@ -1068,24 +1088,27 @@ table.table_grid thead tr.catbg th
 }
 span.upperframe
 {
-	padding: 0;
+	/*padding: 0;
 	display: block;
 	background: url(../images/theme/main_block.png) 0 -90px no-repeat;
-	padding-left: 20px;
+	padding-left: 20px;*/
+	display: none;
 }
 span.upperframe span
 {
-	padding: 0;
+	/*padding: 0;
 	height: 12px;
 	display: block;
-	background: url(../images/theme/main_block.png) 100% -90px no-repeat;
+	background: url(../images/theme/main_block.png) 100% -90px no-repeat;*/
+	display: none;
 }
 span.lowerframe
 {
-	padding: 0;
+	/*padding: 0;
 	display: block;
 	background: url(../images/theme/main_block.png) 0 -102px no-repeat;
-	padding-left: 20px;
+	padding-left: 20px;*/
+	display: none;
 }
 span.lowerframe span
 {
@@ -1434,7 +1457,7 @@ img#logo {
 	background:      -o-linear-gradient(left, rgba(29,56,75,0.9) 0%, #060B0F 20%, #060B0F 80%, rgba(29,56,75,0.9) 100%);
 	background:     linear-gradient(to right, rgba(29,56,75,0.9) 0%, #060B0F 20%, #060B0F 80%, rgba(29,56,75,0.9) 100%);
 	
-	padding-left: 20px;
+	padding: 0 2em 2em;
 }
 #content_section div.frame
 {
@@ -1577,7 +1600,7 @@ div#upper_section div.news form
 #footer_section
 {
 	text-align: center;
-	background: url(../images/theme/main_block.png) no-repeat 0 -820px;
+	/*background: url(../images/theme/main_block.png) no-repeat 0 -820px;*/
 	padding-left: 20px;
 }
 #footer_section span.smalltext
@@ -1586,7 +1609,7 @@ div#upper_section div.news form
 }
 #footer_section div.frame
 {
-	background: url(../images/theme/main_block.png) no-repeat 100% -820px;
+	/*background: url(../images/theme/main_block.png) no-repeat 100% -820px;*/
 	display: block;
 	padding: 60px 0 0 0;
 }
@@ -1736,10 +1759,10 @@ p.moderators
 /* Styles for the info center on the board index.
 ---------------------------------------------------- */
 
-#upshrinkHeaderIC
+/*#upshrinkHeaderIC
 {
 	margin-top: 4px;
-}
+}*/
 dl#ic_recentposts
 {
 	margin: 0 0 0.5em 0;
