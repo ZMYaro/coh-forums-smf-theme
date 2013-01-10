@@ -475,8 +475,7 @@ tr.catbg th a:link, tr.catbg th a:visited, tr.catbg2 td a:link, tr.catbg2 td a:v
 }
 
 /* Alternating backgrounds for posts, and several other sections of the forum. */
-.windowbg, .windowbg2, #preview_body
-{
+.windowbg, .windowbg2, #preview_body, .stickybg, .stickybg2, .lockedbg, .lockedbg2 {
 	/*color: #000;
 	background-color: #e7eaef;*/
 	/*color: #000;
@@ -490,8 +489,7 @@ tr.catbg th a:link, tr.catbg th a:visited, tr.catbg2 td a:link, tr.catbg2 td a:v
 	background:      -o-linear-gradient(#3D6275, #13333F);
 	background:         linear-gradient(#3D6275, #13333F);
 }
-.windowbg3
-{
+.windowbg3 {
 	color: #000;
 	background-color: #cacdd3;
 }
@@ -539,25 +537,28 @@ div.pagesection div.floatright input
 }
 
 /* Sticky topics get a different background */
-.stickybg
-{
+/*.stickybg {
 	background: #e8d8cf;
 }
-.stickybg2
-{
+.stickybg2 {
 	background: #f2e3d9;
+}*/
+.stickybg2.subject span * {
+	color: #FF4444;
 }
 
 /* Locked posts get a different shade, too! */
-.lockedbg
-{
+/*.lockedbg {
 	background: #d4dce2;
 	font-style: italic;
 }
-.lockedbg2
-{
+.lockedbg2 {
 	background: #d8e1e7;
 	font-style: italic;
+}*/
+.lockedbg2.subject span * {
+	font-style: italic;
+	color: #7F7F7F;
 }
 
 /* Posts and personal messages displayed throughout the forum. */
@@ -2831,39 +2832,30 @@ tr.windowbg td, tr.windowbg2 td, tr.approvebg td, tr.highlight2 td
 {
 	font-size: 1em;
 }
-.topic_table td.subject p, .topic_table td.stats
-{
+.topic_table td.subject p, .topic_table td.stats {
 	font-size: 0.85em;
 	padding: 0;
 	margin: 0;
 }
-.topic_table td.lastpost
-{
+.topic_table td.lastpost {
 	font-size: 0.85em;
 	line-height: 1.3em;
 	padding: 4px;
 }
-.topic_table td.stickybg2
-{
+.topic_table td.stickybg2 div {
 	background-image: url(../images/icons/quick_sticky.gif);
 	background-repeat: no-repeat;
 	background-position: 98% 4px;
 }
-.topic_table td.lockedbg2
-{
+.topic_table td.lockedbg2 div {
 	background-image: url(../images/icons/quick_lock.gif);
 	background-repeat: no-repeat;
 	background-position: 98% 4px;
 }
-.topic_table td.locked_sticky2
-{
+.topic_table td.locked_sticky2 div {
 	background-image: url(../images/icons/quick_sticky_lock.gif);
 	background-repeat: no-repeat;
 	background-position: 98% 4px;
-}
-.topic_table td.lastpost
-{
-	/*background-image: none;*/
 }
 
 /* Styles for (fatal) errors.
