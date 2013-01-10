@@ -983,61 +983,37 @@ table.table_grid thead tr.catbg th
 
 /* Common styles used to add corners to divisions.
 ------------------------------------------------------- */
-.windowbg span.topslice
+.windowbg span.topslice, .windowbg2 span.topslice
 {
 	display: block;
-	padding-left: 20px;
-	background: url(../images/theme/main_block.png) 0 -30px no-repeat;
+	/*padding-left: 20px;
+	background: url(../images/theme/main_block.png) 0 -30px no-repeat;*/
+	height: 1em;
 }
-.windowbg span.topslice span
+/*.windowbg span.topslice span, .windowbg2 span.topslice span
 {
 	display: block;
 	background: url(../images/theme/main_block.png) 100% -30px no-repeat;
 	height: 11px;
-}
-.windowbg span.botslice
+}*/
+.windowbg span.botslice, .windowbg2 span.botslice
 {
 	display: block;
-	padding-left: 20px;
-	background: url(../images/theme/main_block.png) 0 -40px no-repeat;
+	/*padding-left: 20px;
+	background: url(../images/theme/main_block.png) 0 -40px no-repeat;*/
 	font-size: 5px;
 	line-height: 5px;
 	margin-bottom: 0.2em;
+	
+	height: 1em;
 }
-.windowbg span.botslice span
+/*.windowbg span.botslice span, .windowbg2 span.botslice span
 {
 	display: block;
 	background: url(../images/theme/main_block.png) 100% -40px no-repeat;
 	height: 11px;
-}
+}*/
 
-.windowbg2 span.topslice
-{
-	display: block;
-	padding-left: 20px;
-	background: url(../images/theme/main_block.png) 0 -60px no-repeat;
-}
-.windowbg2 span.topslice span
-{
-	display: block;
-	background: url(../images/theme/main_block.png) 100% -60px no-repeat;
-	height: 11px;
-}
-.windowbg2 span.botslice
-{
-	display: block;
-	padding-left: 20px;
-	background: url(../images/theme/main_block.png) 0 -71px no-repeat;
-	font-size: 5px;
-	line-height: 5px;
-	margin-bottom: 0.2em;
-}
-.windowbg2 span.botslice span
-{
-	display: block;
-	background: url(../images/theme/main_block.png) 100% -71px no-repeat;
-	height: 11px;
-}
 .approvebg span.topslice
 {
 	display: block;
