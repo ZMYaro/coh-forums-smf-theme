@@ -803,7 +803,7 @@ h3.catbg2 a:hover
 }*/
 h3.titlebg a:hover, h4.titlebg a:hover
 {
-	color: #53616f;
+	/*color: #53616f;*/
 	text-decoration: none;
 }
 h3.catbg img.icon, h4.titlebg img.icon
@@ -833,9 +833,7 @@ h4.titlebg img.icon
 	float: left;
 	margin: 5px 8px 0 0;
 }
-div.cat_bar
-{
-	/*background: #99abbf url(../images/theme/main_block.png) no-repeat 0 -160px;*/
+div.cat_bar, div.title_bar {
 	background-color: #13333F;
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3D6275', endColorstr='#13333F', GradientType=0);
 	background: -webkit-gradient(linear, left top, left bottom, from(#3D6275), to(#13333F));
@@ -845,14 +843,6 @@ div.cat_bar
 	background:      -o-linear-gradient(#3D6275, #13333F);
 	background:         linear-gradient(#3D6275, #13333F);
 	
-	padding-left: 9px;
-	height: 31px;
-	overflow: hidden;
-	margin-bottom: 1px;
-}
-div.title_bar
-{
-	background: #e3e9ef url(../images/theme/main_block.png) no-repeat 0 -200px;
 	padding-left: 9px;
 	height: 31px;
 	overflow: hidden;
