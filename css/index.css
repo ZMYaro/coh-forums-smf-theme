@@ -890,7 +890,8 @@ div.title_barIC h4.titlebg
 img#upshrink_ic, img#newsupshrink
 {
 	float: right;
-	margin: 10px 5px 0 0;
+	/*margin: 10px 5px 0 0;*/
+	margin: 6px 1px 0 0;
 }
 table.table_list a.unreadlink, table.table_list a.collapse
 {
