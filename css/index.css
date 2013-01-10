@@ -651,9 +651,18 @@ a.moderation_link, a.moderation_link:visited
 	padding: 0.5em 1em;
 	font-size: 0.9em;
 	line-height: 1.4em;
-	border: 1px solid #bbb;
-	background: #f5f5f0;
+	/*border: 1px solid #bbb;
+	background: #f5f5f0;*/
 	margin: 0.2em 1px 1em 1px;
+	
+	background-color: #405D71;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3F5C70', endColorstr='#2B4E67', GradientType=0);
+	background: -webkit-gradient(linear, left top, left bottom, from(#3F5C70), to(#2B4E67));
+	background: -webkit-linear-gradient(#3F5C70, #2B4E67);
+	background:    -moz-linear-gradient(#3F5C70, #2B4E67);
+	background:     -ms-linear-gradient(#3F5C70, #2B4E67);
+	background:      -o-linear-gradient(#3F5C70, #2B4E67);
+	background:         linear-gradient(#3F5C70, #2B4E67);
 }
 .description_board
 {
