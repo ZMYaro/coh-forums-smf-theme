@@ -647,8 +647,7 @@ a.moderation_link, a.moderation_link:visited
 }
 
 /* a descriptive style */
-.description, .description_board, .plainbox
-{
+.description, .description_board, .plainbox, .information {
 	padding: 0.5em 1em;
 	font-size: 0.9em;
 	line-height: 1.4em;
@@ -665,23 +664,15 @@ a.moderation_link, a.moderation_link:visited
 	background:      -o-linear-gradient(#3F5C70, #2B4E67);
 	background:         linear-gradient(#3F5C70, #2B4E67);
 }
-.description_board
-{
+.description_board {
 	margin: 1em 1px 0 1px;
 }
 
 /* an informative style */
-.information
-{
-	padding: 0.5em 1em;
-	font-size: 0.9em;
+.information {
 	line-height: 1.3em;
-	border: 1px solid #bbb;
-	background: #f0f6f0;
-	margin: 0.2em 1px 1em 1px;
 }
-.information p
-{
+.information p {
 	padding: 1em;
 	margin: 0;
 }
