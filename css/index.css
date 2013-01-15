@@ -2059,7 +2059,8 @@ p#whoisviewing
 }
 .poster h4, .poster h4 a
 {
-	color: #c06002;
+	/*color: #c06002;*/
+	color: white;
 }
 .poster ul ul
 {
