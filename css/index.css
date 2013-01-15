@@ -2057,11 +2057,13 @@ p#whoisviewing
 	margin: 0.2em 0 0.4em 1.1em;
 	font-size: 120%;
 }
-.poster h4, .poster h4 a
-{
-	/*color: #c06002;*/
-	color: white;
+/*.poster h4, .poster h4 a {
+	color: #c06002;
+}*/
+.poster h4.redname a {
+	color: red;
 }
+
 .poster ul ul
 {
 	margin: 0.3em 1em 0 0;
