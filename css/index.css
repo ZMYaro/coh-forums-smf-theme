@@ -3536,7 +3536,7 @@ dl.addrules dt.floatleft
 /* Used to indicate the current day in the grid. */
 .calendar_today
 {
-	background-color: #fff;
+	background-color: #08a;
 }
 
 #month_grid
