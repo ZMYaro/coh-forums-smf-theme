@@ -592,7 +592,10 @@ div.pagesection div.floatright input
 .stickybg2 {
 	background: #f2e3d9;
 }*/
-.stickybg2.subject span * {
+.stickybg2.subject span a {
+	color: #FF4444;
+}
+.locked_sticky2.subject span a {
 	color: #FF4444;
 }
 
