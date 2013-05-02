@@ -313,29 +313,6 @@ function template_main()
 				echo '
 								<li class="blurb">', $message['member']['blurb'], '</li>';
 
-			// Any custom fields to show as icons?
-			if (!empty($message['member']['custom_fields']))
-			{
-				$shown = false;
-				foreach ($message['member']['custom_fields'] as $custom)
-				{
-					if ($custom['placement'] != 1 || empty($custom['value']))
-						continue;
-					if (empty($shown))
-					{
-						$shown = true;
-						echo '
-								<li class="im_icons">
-									<ul>';
-					}
-					echo '
-										<li>', $custom['value'], '</li>';
-				}
-				if ($shown)
-					echo '
-									</ul>
-								</li>';
-			}
 
 			// This shows the popular messaging icons.
 			if ($message['member']['has_messenger'] && $message['member']['can_view_profile'])
@@ -359,6 +336,18 @@ function template_main()
 				if ($message['member']['can_view_profile'])
 					echo '
 										<li><a href="', $message['member']['href'], '">', ($settings['use_image_buttons'] ? '<img src="' . $settings['images_url'] . '/icons/profile_sm.gif" alt="' . $txt['view_profile'] . '" title="' . $txt['view_profile'] . '" />' : $txt['view_profile']), '</a></li>';
+
+				// Any custom fields to show as icons?
+				if (!empty($message['member']['custom_fields']))
+				{
+					foreach ($message['member']['custom_fields'] as $custom)
+					{
+						if ($custom['placement'] != 1 || empty($custom['value']))
+							continue;
+						echo '
+											<li>', $custom['value'], '</li>';
+					}
+				}
 
 				// Don't show an icon if they haven't specified a website.
 				if ($message['member']['website']['url'] != '' && !isset($context['disabled_fields']['website']))
