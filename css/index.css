@@ -1,4 +1,4 @@
-/*
+﻿/*
  * Written by Zachary “Gamer_Z.” Yaro using the SMF default theme as a base.
  * Based on the City Of Heroes forum theme, but no code was copied from that site.
  *
@@ -1725,7 +1725,7 @@ tbody.divider {
 }
 .table_list tbody.content td.children
 {
-	color: #555;
+	color: #fff;
 	font-size: 85%;
 }
 p.moderators
