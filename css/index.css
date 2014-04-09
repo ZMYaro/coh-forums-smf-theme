@@ -99,7 +99,6 @@ div#wrapper
 {
 	margin: 0 auto;
 	min-width: 764px;
-	max-width: 2300px;
 }
 
 /* lets give all forms zero padding/margins */
@@ -538,6 +537,16 @@ tr.catbg th a:link, tr.catbg th a:visited, tr.catbg2 td a:link, tr.catbg2 td a:v
 	background:      -o-linear-gradient(#3D6275, #13333F);
 	background:         linear-gradient(#3D6275, #13333F);
 }
+table .windowbg, table .windowbg2, table .stickybg, table .stickybg2, table .lockedbg, table .lockedbg2 {
+	/*color: #000;
+	background-color: #e7eaef;*/
+	/*color: #000;
+	background-color: #f0f4f7;*/
+	background: none\9;
+	background-color: #13333F\9;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3D6275', endColorstr='#13333F', GradientType=0);
+	background:	 -ms-linear-gradient(#3D6275, #13333F);
+}
 .windowbg3 {
 	color: #000;
 	background-color: #cacdd3;
@@ -547,9 +556,11 @@ tr.catbg th a:link, tr.catbg th a:visited, tr.catbg2 td a:link, tr.catbg2 td a:v
 .pagesection
 {
 	font-size: 0.9em;
-	padding: 0.2em;
+	padding: 0.2em 0;
 	overflow: hidden;
 	margin-bottom: 1px;
+	display: table;
+	width: 100%;
 }
 div.pagesection div.floatright input
 {
@@ -558,7 +569,7 @@ div.pagesection div.floatright input
 
 .pagelinks
 {
-	padding: 0.6em 0 0.4em 0;
+	line-height: 45px;
 }
 
 /* Colors for background of posts requiring approval */
@@ -617,7 +628,7 @@ div.pagesection div.floatright input
 .post, .personalmessage
 {
 	overflow: auto;
-	line-height: 1.4em;
+	line-height: 150%;
 	padding: 0.1em 0;
 }
 
@@ -997,6 +1008,24 @@ table.table_grid td
 	/*border-bottom: 1px solid #fff;
 	border-right: 1px solid #fff;*/
 }
+table.table_grid tr, table.table_list tr {
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3D6275', endColorstr='#13333F', GradientType=0);
+	background: -webkit-gradient(linear, left top, left bottom, from(#3D6275), to(#13333F));
+	background: -webkit-linear-gradient(#3D6275, #13333F);
+	background:	-moz-linear-gradient(#3D6275, #13333F);
+	background:	 -ms-linear-gradient(#3D6275, #13333F);
+	background:	  -o-linear-gradient(#3D6275, #13333F);
+	background:		 linear-gradient(#3D6275, #13333F);
+}
+table.table_grid tr:hover,table.table_list tr:hover {
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2e4a58', endColorstr='#0f2730', GradientType=0);
+	background: -webkit-gradient(linear, left top, left bottom, from(#2e4a58), to(#0f2730));
+	background: -webkit-linear-gradient(#2e4a58, #0f2730);
+	background:	-moz-linear-gradient(#2e4a58, #0f2730);
+	background:	 -ms-linear-gradient(#2e4a58, #0f2730);
+	background:	  -o-linear-gradient(#2e4a58, #0f2730);
+	background:		 linear-gradient(#2e4a58, #0f2730);
+}
 
 /* GenericList */
 .additional_row
@@ -1114,6 +1143,10 @@ span.upperframe
 	padding-left: 20px;*/
 	display: none;
 }
+span.upperframe.clear
+{
+	display: block;
+}
 span.upperframe span
 {
 	/*padding: 0;
@@ -1161,13 +1194,12 @@ span.lowerframe span
 }
 .auto_suggest_item
 {
-	background-color: #ddd;
+	background-color: #13333F;
 }
 .auto_suggest_item_hover
 {
-	background-color: #888;
+	background-color: #0f2730;
 	cursor: pointer;
-	color: #eee;
 }
 
 /* Styles for the standard dropdown menus.
@@ -1352,9 +1384,11 @@ span.lowerframe span
 
 .buttonlist ul
 {
+	float: left;
 	z-index: 100;
-	padding: 5px;
-	margin: 0 0.2em 5px 0;
+	padding: 0;
+	/*padding: 5px;*/
+	/*margin: 0 0.2em 5px 0;*/
 }
 .buttonlist ul li
 {
@@ -1488,7 +1522,7 @@ img#logo {
 	background:      -o-linear-gradient(left, rgba(29,56,75,0.9) 0%, #060B0F 20%, #060B0F 80%, rgba(29,56,75,0.9) 100%);
 	background:     linear-gradient(to right, rgba(29,56,75,0.9) 0%, #060B0F 20%, #060B0F 80%, rgba(29,56,75,0.9) 100%);
 	
-	padding: 0 2em 2em;
+	padding: 0 20px 2em;
 }
 #content_section div.frame
 {
@@ -1534,7 +1568,7 @@ img#upshrink
 /* the upper_section, float the two each way */
 #upper_section
 {
-	padding: 5px;
+	padding: 5px 0;
 	/*margin-bottom: 1.5em;*/
 }
 #upper_section ul li.greeting
@@ -1573,7 +1607,7 @@ div#upper_section div.user p
 div#upper_section div.user ul
 {
 	margin: 0;
-	padding-left: 10px;
+	padding-left: 1px;
 }
 div#upper_section div.user ul li
 {
@@ -1602,7 +1636,7 @@ div#upper_section div.news form
 /* The navigation list (i.e. linktree) */
 .navigate_section
 {
-	padding: 0.5em;
+	padding: 0.5em 0;
 	margin: 0 0 0 0;
 }
 .navigate_section ul
@@ -1742,7 +1776,7 @@ p.moderators
 /* the posting icons */
 #posting_icons
 {
-	padding: 0 1em 0.5em 1em;
+	padding: 1em 0.5em 1em 0;
 	/*margin: 0 0 1em 0;*/
 	margin: 0;
 	line-height: 1em;
@@ -1751,10 +1785,14 @@ p.moderators
 {
 	font-size: 0.8em;
 }
+#posting_icons li
+{
+	padding-right: 4ex;
+}
 #posting_icons img
 {
 	vertical-align: middle;
-	margin: 0 0 0 4ex;
+	margin: 0;
 }
 #postbuttons_upper ul li a span
 {
@@ -1773,7 +1811,7 @@ p.moderators
 }
 .mark_read
 {
-	padding: 0 0.5em;
+	padding: 0;
 	min-height: 2.5em;
 }
 
@@ -1939,6 +1977,11 @@ div.table_frame .table_list
 #moderationbuttons
 {
 	overflow: hidden;
+}
+#moderationbuttons .buttonlist ul li a
+{
+	margin-left: 0;
+	margin-right: 12px;
 }
 /* Events */
 .linked_events
@@ -3240,6 +3283,7 @@ div#profile_success
 	border-top: 2px solid #b3b3bf;
 	padding-top: 12px;
 	margin-top: 6px;
+	line-height: 150%;
 	overflow: auto;
 }
 
