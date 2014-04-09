@@ -537,16 +537,26 @@ tr.catbg th a:link, tr.catbg th a:visited, tr.catbg2 td a:link, tr.catbg2 td a:v
 	background:      -o-linear-gradient(#3D6275, #13333F);
 	background:         linear-gradient(#3D6275, #13333F);
 }
-table .windowbg, table .windowbg2, table .stickybg, table .stickybg2, table .lockedbg, table .lockedbg2 {
-	/*color: #000;
-	background-color: #e7eaef;*/
-	/*color: #000;
-	background-color: #f0f4f7;*/
-	background: none\9;
-	background-color: #13333F\9;
+#boardindex_table table tr td.info, #boardindex_table table tr td.lastpost, .childboards table tr td.info, .childboards table tr td.lastpost, table tr .windowbg, table tr .windowbg2, table tr .stickybg, table tr .stickybg2, table tr .lockedbg, table tr .lockedbg2 {
+	background-color: #13333F;
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3D6275', endColorstr='#13333F', GradientType=0);
+	background: -webkit-gradient(linear, left top, left bottom, from(#3D6275), to(#13333F));
+	background: -webkit-linear-gradient(#3D6275, #13333F);
+	background:    -moz-linear-gradient(#3D6275, #13333F);
 	background:	 -ms-linear-gradient(#3D6275, #13333F);
+	background:      -o-linear-gradient(#3D6275, #13333F);
+	background:         linear-gradient(#3D6275, #13333F);
 }
+#boardindex_table table tr:hover td.info, #boardindex_table table tr:hover td.lastpost, .childboards table tr:hover td.info, .childboards table tr:hover td.lastpost, table tr:hover .windowbg, table tr:hover .windowbg2, table tr:hover .stickybg, table tr:hover .stickybg2, table tr:hover .lockedbg, table tr:hover .lockedbg2 {
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2e4a58', endColorstr='#0f2730', GradientType=0);
+	background: -webkit-gradient(linear, left top, left bottom, from(#2e4a58), to(#0f2730));
+	background: -webkit-linear-gradient(#2e4a58, #0f2730);
+	background:    -moz-linear-gradient(#2e4a58, #0f2730);
+	background:     -ms-linear-gradient(#2e4a58, #0f2730);
+	background:      -o-linear-gradient(#2e4a58, #0f2730);
+	background:         linear-gradient(#2e4a58, #0f2730);
+}
+
 .windowbg3 {
 	color: #000;
 	background-color: #cacdd3;
@@ -569,6 +579,7 @@ div.pagesection div.floatright input
 
 .pagelinks
 {
+	/*padding: 0.6em 0 0.4em 0;*/
 	line-height: 45px;
 }
 
@@ -1776,6 +1787,7 @@ p.moderators
 /* the posting icons */
 #posting_icons
 {
+	/*padding: 1em 0.5em 1em;*/
 	padding: 1em 0.5em 1em 0;
 	/*margin: 0 0 1em 0;*/
 	margin: 0;
