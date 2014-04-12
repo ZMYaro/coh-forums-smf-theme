@@ -5,7 +5,7 @@
  */
 
 /*
- * 
+ *
  * ░░░░░░▄█████▄░░░░░░░░
  * ░░░░▄█▀▀░░░░▀█▄░░░░░░
  * ░░░▄█▄▄▄▄░▄▄▄▄█░░░░░░
@@ -24,13 +24,13 @@
  * ▀██████░░░░░░▄███████
  * ░██████░░░░░███████▀░
  * ░░█████░░░░░████▀░░░░
- * 
+ *
  * This is a
  * (•_•)
  * ( •_•)>⌐■-■
  * (⌐■_■)
  * Gangnam Stylesheet
- * 
+ *
  */
 
 
@@ -338,7 +338,7 @@ ul.reset, ul.reset li
 blockquote.bbc_standard_quote, blockquote.bbc_alternate_quote {
 	/*font-size: x-small;*/
 	font-style: italic;
-	
+
 	/*color: #000;
 	line-height: 1.4em;
 	background: url(../images/theme/quote.png) 0.1em 0.1em no-repeat;
@@ -367,7 +367,7 @@ code.bbc_code {
 	border-top: 2px solid #999;
 	border-bottom: 2px solid #999;
 	line-height: 1.5em;*/
-	
+
 	padding: 3px 1em;
 	overflow: auto;
 	white-space: nowrap;
@@ -547,7 +547,7 @@ tr.catbg th a:link, tr.catbg th a:visited, tr.catbg2 td a:link, tr.catbg2 td a:v
 	background:      -o-linear-gradient(#3D6275, #13333F);
 	background:         linear-gradient(#3D6275, #13333F);
 }
-#boardindex_table table tr:hover td.info, #boardindex_table table tr:hover td.lastpost, .childboards table tr:hover td.info, .childboards table tr:hover td.lastpost, table tr:hover .windowbg, table tr:hover .windowbg2, table tr:hover .stickybg, table tr:hover .stickybg2, table tr:hover .lockedbg, table tr:hover .lockedbg2 {
+table.table_grid tr:hover .windowbg, table.table_grid tr:hover .windowbg2, table.table_grid tr:hover .stickybg, table.table_grid tr:hover .stickybg2, table.table_grid tr:hover .lockedbg, table.table_grid tr:hover .lockedbg2 {
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2e4a58', endColorstr='#0f2730', GradientType=0);
 	background: -webkit-gradient(linear, left top, left bottom, from(#2e4a58), to(#0f2730));
 	background: -webkit-linear-gradient(#2e4a58, #0f2730);
@@ -728,7 +728,7 @@ a.moderation_link, a.moderation_link:visited
 	/*border: 1px solid #bbb;
 	background: #f5f5f0;*/
 	margin: 0.2em 1px 1em 1px;
-	
+
 	background-color: #405D71;
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3F5C70', endColorstr='#2B4E67', GradientType=0);
 	background: -webkit-gradient(linear, left top, left bottom, from(#3F5C70), to(#2B4E67));
@@ -885,7 +885,7 @@ h4.catbg, h4.catbg2 , h3.catbg , h3.catbg2 , .table_list tbody.header td.catbg
 {
 	/*background: url(../images/theme/main_block.png) no-repeat 100% -160px;*/
 	background: transparent none;
-	
+
 	padding-right: 9px;
 }
 h4.titlebg, h3.titlebg
@@ -907,7 +907,7 @@ div.cat_bar, div.title_bar {
 	background:     -ms-linear-gradient(#3D6275, #13333F);
 	background:      -o-linear-gradient(#3D6275, #13333F);
 	background:         linear-gradient(#3D6275, #13333F);
-	
+
 	padding-left: 9px;
 	height: 31px;
 	overflow: hidden;
@@ -937,7 +937,7 @@ div.title_barIC
 	background:     -ms-linear-gradient(#424549, #1D1E1E);
 	background:      -o-linear-gradient(#424549, #1D1E1E);
 	background:         linear-gradient(#424549, #1D1E1E);
-	
+
 	padding-left: 9px;
 	height: 31px;
 	overflow: hidden;
@@ -1028,6 +1028,10 @@ table.table_grid tr, table.table_list tr {
 	background:	  -o-linear-gradient(#3D6275, #13333F);
 	background:		 linear-gradient(#3D6275, #13333F);
 }
+table.table_list .header tr td h3 {
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3D6275', endColorstr='#13333F', GradientType=0);
+    background:  -ms-linear-gradient(#3D6275, #13333F);
+}
 table.table_grid tr:hover,table.table_list tr:hover {
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2e4a58', endColorstr='#0f2730', GradientType=0);
 	background: -webkit-gradient(linear, left top, left bottom, from(#2e4a58), to(#0f2730));
@@ -1053,7 +1057,7 @@ table.table_grid thead tr.catbg th
 {
 	padding: 0.4em 0.8em;
 	cursor: default;
-} 
+}
 
 /* Common styles used to add corners to divisions.
 ------------------------------------------------------- */
@@ -1078,7 +1082,7 @@ table.table_grid thead tr.catbg th
 	font-size: 5px;
 	line-height: 5px;
 	margin-bottom: 0.2em;
-	
+
 	height: 1em;
 }
 /*.windowbg span.botslice span, .windowbg2 span.botslice span
@@ -1133,7 +1137,7 @@ table.table_grid thead tr.catbg th
 	background:     -ms-linear-gradient(#364D5D, #1F3A4D);
 	background:      -o-linear-gradient(#364D5D, #1F3A4D);
 	background:         linear-gradient(#364D5D, #1F3A4D);
-	
+
 	/*border-left: 1px solid #c5c5c5;
 	border-right: 1px solid #c5c5c5;*/
 	border: 1px solid #547280;
@@ -1222,9 +1226,9 @@ span.lowerframe span
 	margin: 0;
 	/*width: 98%;*/
 	width: 100%;
-	
+
 	font-size: 110%;
-	
+
 	background-color: #191919;
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#45494D', endColorstr='#191919', GradientType=0);
 	background: -webkit-gradient(linear, left top, left bottom, from(#45494D), to(#191919));
@@ -1233,7 +1237,7 @@ span.lowerframe span
 	background:     -ms-linear-gradient(#45494D, #191919);
 	background:      -o-linear-gradient(#45494D, #191919);
 	background:         linear-gradient(#45494D, #191919);
-	
+
 	border-style: solid;
 	border-width: 1px;
 	border-color: transparent #45494D #1C2024;
@@ -1280,7 +1284,7 @@ span.lowerframe span
 	/*height: 22px;*/
 	line-height: 19px;
 	white-space: pre;
-	
+
 	border-right: 1px solid #2D2F33;
 }
 .dropmenu li
@@ -1417,7 +1421,7 @@ span.lowerframe span
 	margin-left: 12px;
 	/*text-transform: uppercase;
 	cursor: pointer;*/
-	
+
 	color: white;
 	border: 1px solid #727475;
 	background-color: #525B5E;
@@ -1449,7 +1453,7 @@ span.lowerframe span
 	/*background: #5a6c85 url(../images/theme/menu_gfx.png) no-repeat 0 -90px;
 	color: #fff;
 	font-weight: bold;*/
-	
+
 	border-color: #4F6372;
 	background-color: #28546D;
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#326682', endColorstr='#214256', GradientType=0);
@@ -1509,9 +1513,9 @@ img#logo {
 	background:     -ms-linear-gradient(left, rgba(29,56,75,0.9) 0%, #060B0F 20%, #060B0F 80%, rgba(29,56,75,0.9) 100%);
 	background:      -o-linear-gradient(left, rgba(29,56,75,0.9) 0%, #060B0F 20%, #060B0F 80%, rgba(29,56,75,0.9) 100%);
 	background:     linear-gradient(to right, rgba(29,56,75,0.9) 0%, #060B0F 20%, #060B0F 80%, rgba(29,56,75,0.9) 100%);
-	
+
 	/*border-radius: 10px 10px 0 0;*/
-	
+
 	padding: 5px 20px 1em;
 }
 #header div.frame
@@ -1532,7 +1536,7 @@ img#logo {
 	background:     -ms-linear-gradient(left, rgba(29,56,75,0.9) 0%, #060B0F 20%, #060B0F 80%, rgba(29,56,75,0.9) 100%);
 	background:      -o-linear-gradient(left, rgba(29,56,75,0.9) 0%, #060B0F 20%, #060B0F 80%, rgba(29,56,75,0.9) 100%);
 	background:     linear-gradient(to right, rgba(29,56,75,0.9) 0%, #060B0F 20%, #060B0F 80%, rgba(29,56,75,0.9) 100%);
-	
+
 	padding: 0 20px 2em;
 }
 #content_section div.frame
@@ -1719,7 +1723,7 @@ select.qaction, input.qaction
 table.table_list
 {
 	width: 100%;
-	
+
 	background-color: #547280;
 	border-spacing: 1px;
 }
@@ -2206,7 +2210,7 @@ p#whoisviewing
 	margin: 6px 20px 10px 0;
 	text-align: right;
 	font: bold 0.85em arial, sans-serif;
-	color: #334466;	
+	color: #334466;
 }
 
 /* The quick buttons */
@@ -2573,7 +2577,7 @@ ul.post_options li
 }
 #edit_poll dl.poll_options dd input
 {
-	margin-left: 0; 
+	margin-left: 0;
 }
 
 /* Styles for the recent messages section.
