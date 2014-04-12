@@ -523,12 +523,11 @@ tr.catbg th a:link, tr.catbg th a:visited, tr.catbg2 td a:link, tr.catbg2 td a:v
 }
 
 /* Alternating backgrounds for posts, and several other sections of the forum. */
-.windowbg, .windowbg2, #preview_body, .stickybg, .stickybg2, .lockedbg, .lockedbg2 {
+#forumposts .windowbg, #forumposts .windowbg2, tr .windowbg, tr .windowbg2, #preview_body, .stickybg, .stickybg2, .lockedbg, .lockedbg2, td.info, td.lastpost  {
 	/*color: #000;
 	background-color: #e7eaef;*/
 	/*color: #000;
 	background-color: #f0f4f7;*/
-	background-color: #13333F;
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3D6275', endColorstr='#13333F', GradientType=0);
 	background: -webkit-gradient(linear, left top, left bottom, from(#3D6275), to(#13333F));
 	background: -webkit-linear-gradient(#3D6275, #13333F);
@@ -537,17 +536,11 @@ tr.catbg th a:link, tr.catbg th a:visited, tr.catbg2 td a:link, tr.catbg2 td a:v
 	background:      -o-linear-gradient(#3D6275, #13333F);
 	background:         linear-gradient(#3D6275, #13333F);
 }
-#boardindex_table table tr td.info, #boardindex_table table tr td.lastpost, .childboards table tr td.info, .childboards table tr td.lastpost, table tr .windowbg, table tr .windowbg2, table tr .stickybg, table tr .stickybg2, table tr .lockedbg, table tr .lockedbg2 {
-	background-color: #13333F;
+table.table_grid tr td {
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3D6275', endColorstr='#13333F', GradientType=0);
-	background: -webkit-gradient(linear, left top, left bottom, from(#3D6275), to(#13333F));
-	background: -webkit-linear-gradient(#3D6275, #13333F);
-	background:    -moz-linear-gradient(#3D6275, #13333F);
 	background:	 -ms-linear-gradient(#3D6275, #13333F);
-	background:      -o-linear-gradient(#3D6275, #13333F);
-	background:         linear-gradient(#3D6275, #13333F);
 }
-table.table_grid tr:hover .windowbg, table.table_grid tr:hover .windowbg2, table.table_grid tr:hover .stickybg, table.table_grid tr:hover .stickybg2, table.table_grid tr:hover .lockedbg, table.table_grid tr:hover .lockedbg2 {
+table.table_grid tr:hover td {
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2e4a58', endColorstr='#0f2730', GradientType=0);
 	background: -webkit-gradient(linear, left top, left bottom, from(#2e4a58), to(#0f2730));
 	background: -webkit-linear-gradient(#2e4a58, #0f2730);
@@ -1019,7 +1012,7 @@ table.table_grid td
 	/*border-bottom: 1px solid #fff;
 	border-right: 1px solid #fff;*/
 }
-table.table_grid tr, table.table_list tr {
+.topic_table table.table_grid tr {
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3D6275', endColorstr='#13333F', GradientType=0);
 	background: -webkit-gradient(linear, left top, left bottom, from(#3D6275), to(#13333F));
 	background: -webkit-linear-gradient(#3D6275, #13333F);
@@ -1032,7 +1025,7 @@ table.table_list .header tr td h3 {
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3D6275', endColorstr='#13333F', GradientType=0);
     background:  -ms-linear-gradient(#3D6275, #13333F);
 }
-table.table_grid tr:hover,table.table_list tr:hover {
+.topic_table table.table_grid tr:hover {
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2e4a58', endColorstr='#0f2730', GradientType=0);
 	background: -webkit-gradient(linear, left top, left bottom, from(#2e4a58), to(#0f2730));
 	background: -webkit-linear-gradient(#2e4a58, #0f2730);
