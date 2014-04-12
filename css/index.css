@@ -540,15 +540,6 @@ table.table_grid tr td {
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3D6275', endColorstr='#13333F', GradientType=0);
 	background:	 -ms-linear-gradient(#3D6275, #13333F);
 }
-table.table_grid tr:hover td {
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2e4a58', endColorstr='#0f2730', GradientType=0);
-	background: -webkit-gradient(linear, left top, left bottom, from(#2e4a58), to(#0f2730));
-	background: -webkit-linear-gradient(#2e4a58, #0f2730);
-	background:    -moz-linear-gradient(#2e4a58, #0f2730);
-	background:     -ms-linear-gradient(#2e4a58, #0f2730);
-	background:      -o-linear-gradient(#2e4a58, #0f2730);
-	background:         linear-gradient(#2e4a58, #0f2730);
-}
 
 .windowbg3 {
 	color: #000;
@@ -1024,15 +1015,6 @@ table.table_grid td
 table.table_list .header tr td h3 {
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3D6275', endColorstr='#13333F', GradientType=0);
     background:  -ms-linear-gradient(#3D6275, #13333F);
-}
-.topic_table table.table_grid tr:hover {
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2e4a58', endColorstr='#0f2730', GradientType=0);
-	background: -webkit-gradient(linear, left top, left bottom, from(#2e4a58), to(#0f2730));
-	background: -webkit-linear-gradient(#2e4a58, #0f2730);
-	background:	-moz-linear-gradient(#2e4a58, #0f2730);
-	background:	 -ms-linear-gradient(#2e4a58, #0f2730);
-	background:	  -o-linear-gradient(#2e4a58, #0f2730);
-	background:		 linear-gradient(#2e4a58, #0f2730);
 }
 
 /* GenericList */
